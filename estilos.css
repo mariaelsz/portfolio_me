@@ -5,20 +5,36 @@ body {
     background-color: #FFF5E6;
 }
 
-
-.arcoiris{position: relative;}
-.arcoiris p{ font-family: Roboto; font-size: 160px; font-weight: 900; transform: rotate(180deg);}
-.arcoiris p:nth-of-type(1) {position: absolute; color: #ECB3AE; left: 10px;}
+.nav-item{ text-decoration-style: none; color: black;}
+.arcoiris{position: relative; height: 30vh; left: 40%;}
+.arcoiris p{ font-family: Roboto; font-size: 200px; font-weight: 900; transform: rotate(180deg);}
+.arcoiris p:nth-of-type(1) {position: absolute; color: #ECB3AE; left: 5px;}
 .arcoiris p:nth-of-type(2) {position: absolute; color: #FBBD3B; left: 20px; }
-.arcoiris p:nth-of-type(3) {position: absolute; color: #D54C38; left: 30px; }
+.arcoiris p:nth-of-type(3) {position: absolute; color: #D54C38; left: 35px; }
 
-.titulo{position: relative;}
-.titulo h1:nth-of-type(1){ font-family: Roboto; font-size: 160px; font-weight: 900; color: #2A5F8B; position: absolute;}
-.titulo h1:nth-of-type(2) {-webkit-text-stroke: 3px #2A5F8B; color: #FFF5E6; right: 10px; font-size: 160px; font-weight: 900;}
+.titulo{position: relative; left: 60px}
+.titulo h1{ font-family: Roboto; font-size: 160px; font-weight: 900; color: #2A5F8B; -webkit-text-stroke: 2px #2A5F8B; position: relative;}
+.titulo h1:nth-of-type(1) {color: #FFF5E6; left: 10px; font-size: 160px; font-weight: 900; position: absolute;}
 
-h2 {
-    font-size: 160px;
-    -webkit-text-stroke: 3px #FBBD3B;
-    color: #FFF5E6;
-    font-family: Roboto;
-    font-weight: 900;} 
+h2 {font-size: 160px; -webkit-text-stroke: 3px #FBBD3B; color: #FFF5E6; font-family: Roboto; font-weight: 900;} 
+
+.nav-link:hover { font-weight: bold;}
+
+h3{ color: #D54C38; font-family: Roboto; font-weight: 300; font-size: 36px;} 
+h4{ color:#002E54; font-family: Roboto; font-size: 24px; font-weight: 300;}
+
+.redes { width: 97px; height: 95px; display: block; background-image:url(../imagenes/sprite.png); background-position:5px 3px;}
+.redes:hover{ height: 77px; background-position:5px 96px}
+
+.redes:nth-of-type(2){background-position:184px 3px; width: 84px}
+.redes:nth-of-type(2):hover{background-position:184px 92px; width: 84px}
+.redes:nth-of-type(3){background-position:102px 3px;}
+.redes:nth-of-type(3):hover{background-position:102px 280px;}
+
+
+@media(max-width:576px){
+    body{font-size: 60%;
+    padding-right: 2rem;
+    padding-left: 2rem;}
+  
+}
